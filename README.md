@@ -1,4 +1,6 @@
-a Twilio powered VBX virtual phone system with multi-tenant and payment support (via Stripe).
+A Twilio powered VBX virtual phone system with multi-tenant and payment support (via Stripe).
+A complete competitive analysis of this platform was done (check out vbx_business_case.pdf) and provides some useful points, such as market research, price point suggestions, feature subset recommendations to maximize profit, etc.
+Screenshots are located in the vbx_screenshots.pdf file.
 
 Make sure that you update the config/database.php with your credentials.
 
