@@ -1,0 +1,8 @@
+{
+	"name" : "Poll",
+	"sms_name" : "Poll",
+	"voice_title" : "Poll",
+	"sms_title" : "Poll",
+	"description" : "Add a poll response.",
+	"type" : ["sms", "voice"]
+}

@@ -1,0 +1,18 @@
+.bk-blank { background-color: white }
+.bk-warndark { background-color:#e4a9b0;}
+.bk-warnlight { background-color:#e5d3d5; }
+.bk-okdark { background-color:#e7eef3;}
+.bk-oklight { background-color:#f1f2f2; }
+.bk-unknownlight { background-color:#f1f2f2; }
+.bk-unknowndark { background-color:#f1f2f2; }
+.bk-outline { background-color:#cad0d2; }
+.outline { border:1px solid #cad0d2; }
+.outlinedark { border:1px solid #AAAAAA; }
+.rightoutline { border-right:1px solid #cad0d2; }
+.bottomoutline { border-bottom:1px solid #cad0d2; }
+#action { background-color: #edfbde }
+.green { color: green }
+.darkgreen { color: #467c66 }
+.bk-yellowdark { background-color:#FFE540;}
+.bk-yellowlight { background-color:lightyellow; }
+

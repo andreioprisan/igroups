@@ -1,0 +1,8 @@
+{
+	"name" : "Track",
+	"sms_name" : "Track",
+	"voice_title" : "Google Analytics",
+	"sms_title" : "Google Analytics",
+	"description" : "Track the current applet using Google Analytics.",
+	"type" : ["sms", "voice"]
+}

@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url('/asset/images/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+@font-face {
+	font-family: 'Arimo';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arimo'), url('/asset/images/ZS0wkeOZuckNE3boyLYNt6CWcynf_cDxXwCLxiixG1c.woff') format('woff');
+}
+@font-face {
+	font-family: 'Actor';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Actor Regular'), local('Actor-Regular'), url('/asset/images/SqA9OdmswJX8b4TrqlN76KCWcynf_cDxXwCLxiixG1c.woff') format('woff');
+}
+@font-face {
+	font-family: 'Muli';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Muli Light'), local('Muli-Light'), url('/asset/images/TgrecWq39GVsTOFonFwGXQLUuEpTyoUstqEm5AMlJo4.woff') format('woff');
+}
+@font-face {
+	font-family: 'Cabin';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Cabin Regular'), local('Cabin-Regular'), url('/asset/images/kJXt72Gt1LyFMZcEKAAvlKCWcynf_cDxXwCLxiixG1c.woff') format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url('/asset/images/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+	font-family: 'Open Sans Cond Light';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url('/asset/images/calfont.woff') format('woff');
+}

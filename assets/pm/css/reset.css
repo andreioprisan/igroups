@@ -1,0 +1,48 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+caption {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+.clr { clear: both; }
+.clrL { clear: left; }
+.clrR { clear: right; }
+.lft { float: left; }
+.rgt { float: right; }
+.none { display: none; }
+.hidden { visibility: hidden; }
+.no-pad { padding: 0; }
+.no-margin { margin: 0; }
+.normal { font-weight: normal; }
+.bold { font-weight: bold; }
+.padRight10 { padding-right: 10px; }
+.marRight10 { margin-right: 10px; }

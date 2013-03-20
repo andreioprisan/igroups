@@ -1,0 +1,5 @@
+{
+    "name" : "RegEx",
+    "description" : "A regex keyword based matching response system",
+    "type" : ["sms"]
+}

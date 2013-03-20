@@ -1,0 +1,568 @@
+/* ribbon style */
+
+.container .rleft.ribbon-wrapper {
+/*position: absolute;
+left: 64px;
+*/
+position:relative;
+border-bottom: 0px solid #ccc;
+border-top: 0px solid #ccc;
+-moz-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-moz-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+}
+.container .rleft .ribbon-front {
+	background-color: #012957;
+	height: 35px;
+	width: 270px;
+	position: relative;
+	left: -30px;
+	z-index: 2;
+}
+
+.container .rleft .ribbon-front,
+.container .rleft .ribbon-back-left,
+.container .rleft .ribbon-back-right {
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+.container .rleft .ribbon-edge-topleft,
+.container .rleft .ribbon-edge-topright,
+.container .rleft .ribbon-edge-bottomleft,
+.container .rleft .ribbon-edge-bottomright {
+	position: absolute;
+	z-index: 1;
+	border-style: solid;
+	height: 0px;
+	width: 0px;
+}
+
+.container .rleft .ribbon-edge-topleft,
+.container .rleft .ribbon-edge-topright {
+}
+
+.container .rleft .ribbon-edge-bottomleft,
+.container .rleft .ribbon-edge-bottomright {
+	top: 35px;
+}
+
+.container .rleft .ribbon-edge-topleft,
+.container .rleft .ribbon-edge-bottomleft {
+	left: -30px;
+	border-color: transparent #000000 transparent transparent;
+}
+
+.container .rleft .ribbon-edge-topleft {
+	top: 0px;
+	border-width: 0px 10px 0 0;
+}
+.container .rleft .ribbon-edge-bottomleft {
+	border-width: 0 10px 10px 0;
+}
+
+.container .rleft .ribbon-edge-topright,
+.container .rleft .ribbon-edge-bottomright {
+	left: 140px;
+	border-color: transparent transparent transparent #000000;
+}
+
+.container .rleft .ribbon-edge-topright {
+	top: -10px;
+	border-width: 10px 0 0 0px;
+}
+.container .rleft .ribbon-edge-bottomright {
+	border-width: 0 0 35px 0px;
+}
+
+.container .rleft .ribbon-back-left {
+	position: absolute;
+	top: 10px;
+	left: -20px;
+	width: 0px;
+	height: 35px;
+	background-color: #8D0A0A;
+	z-index: 0;
+}
+
+.container .rleft .ribbon-back-right {
+	position: absolute;
+	top: -10px;
+	right: -20px;
+	width: 0px;
+	height: 80px;
+	background-color: #FFFFFF;
+	z-index: 0;
+}
+
+
+/* ribbon right style */
+
+.container .rright.ribbon-wrapper {
+/*position: absolute;
+right: 14px;
+*/
+position:absolute;
+right: 14px;
+border-bottom: 0px solid #ccc;
+border-top: 0px solid #ccc;
+-moz-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-moz-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+}
+.container .rright .ribbon-front {
+	background-color: #012957;
+	height: 35px;
+	width: 270px;
+	position: relative;
+	left: -20px;
+	z-index: 2;
+}
+
+.container .rright .ribbon-front,
+.container .rright .ribbon-back-left,
+.container .rright .ribbon-back-right {
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+.container .rright .ribbon-edge-topleft,
+.container .rright .ribbon-edge-topright,
+.container .rright .ribbon-edge-bottomleft,
+.container .rright .ribbon-edge-bottomright {
+	position: absolute;
+	z-index: 1;
+	border-style: solid;
+	height: 0px;
+	width: 0px;
+}
+
+.container .rright .ribbon-edge-topleft,
+.container .rright .ribbon-edge-topright {
+}
+
+.container .rright .ribbon-edge-bottomleft,
+.container .rright .ribbon-edge-bottomright {
+	top: 35px;
+}
+
+.container .rright .ribbon-edge-topleft,
+.container .rright .ribbon-edge-bottomleft {
+	left: -20px;
+	border-color: transparent #000000 transparent transparent;
+}
+
+.container .rright .ribbon-edge-topleft {
+	top: -10px;
+	border-width: 10px 0px 0 0;
+}
+.container .rright .ribbon-edge-bottomleft {
+	border-width: 0 0px 35px 0;
+}
+
+.container .rright .ribbon-edge-topright,
+.container .rright .ribbon-edge-bottomright {
+	left: 240px;
+	border-color: transparent transparent transparent #000000;
+}
+
+.container .rright .ribbon-edge-topright {
+	top: 0px;
+	border-width: 0px 0 0 10px;
+}
+.container .rright .ribbon-edge-bottomright {
+	border-width: 0 0 10px 10px;
+}
+
+.container .rright .ribbon-back-left {
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	width: 0px;
+	height: 80px;
+	background-color: #8D0A0A;
+	z-index: 0;
+}
+
+.container .rright .ribbon-back-right {
+	position: absolute;
+	top: 10px;
+	right: -20px;
+	width: 0px;
+	height: 35px;
+	background-color: #fff;
+	z-index: 0;
+}
+
+/* ribbon right style */
+.rib .rright.ribbon-wrapper {
+/*position: absolute;
+right: 14px;
+*/
+position:absolute;
+left: 0px;
+border-bottom: 0px solid #ccc;
+border-top: 0px solid #ccc;
+-moz-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-moz-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+}
+.rib .rright .ribbon-front {
+	background-color: #012957;
+	height: 35px;
+	width: 270px;
+	position: relative;
+	left: -20px;
+	z-index: 2;
+}
+
+.rib .rright .ribbon-front,
+.rib .rright .ribbon-back-left,
+.rib .rright .ribbon-back-right {
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+.rib .rright .ribbon-edge-topleft,
+.rib .rright .ribbon-edge-topright,
+.rib .rright .ribbon-edge-bottomleft,
+.rib .rright .ribbon-edge-bottomright {
+	position: absolute;
+	z-index: 1;
+	border-style: solid;
+	height: 0px;
+	width: 0px;
+}
+
+.rib .rright .ribbon-edge-topleft,
+.rib .rright .ribbon-edge-topright {
+}
+
+.rib .rright .ribbon-edge-bottomleft,
+.rib .rright .ribbon-edge-bottomright {
+	top: 35px;
+}
+
+.rib .rright .ribbon-edge-topleft,
+.rib .rright .ribbon-edge-bottomleft {
+	left: -20px;
+	border-color: transparent #000000 transparent transparent;
+}
+
+.rib .rright .ribbon-edge-topleft {
+	top: -10px;
+	border-width: 10px 0px 0 0;
+}
+.rib .rright .ribbon-edge-bottomleft {
+	border-width: 0 0px 35px 0;
+}
+
+.rib .rright .ribbon-edge-topright,
+.rib .rright .ribbon-edge-bottomright {
+	left: 240px;
+	border-color: transparent transparent transparent #000000;
+}
+
+.rib .rright .ribbon-edge-topright {
+	top: 0px;
+	border-width: 0px 0 0 10px;
+}
+.rib .rright .ribbon-edge-bottomright {
+	border-width: 0 0 10px 10px;
+}
+
+.rib .rright .ribbon-back-left {
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	width: 0px;
+	height: 80px;
+	background-color: #8D0A0A;
+	z-index: 0;
+}
+
+.rib .rright .ribbon-back-right {
+	position: absolute;
+	top: 10px;
+	right: -20px;
+	width: 0px;
+	height: 35px;
+	background-color: #fff;
+	z-index: 0;
+}
+
+.labelbig {
+	color: white;
+	padding: 3px 0px 0px 0px;
+	display: inline;
+	position: absolute;
+	top: 7px;
+}
+
+.ribbon_headerbar {
+	color: white;
+	padding: 0px 20px 0px 10px;
+	display: inline;
+	position: relative;
+	left: 60px;
+}
+
+.ribbon_icon {
+	position: absolute;
+	display: inline;
+	right: 2px;
+	padding: 3px 0px 20px 0px;
+}
+
+
+
+
+/* top like tab, in red */
+/* ribbon right style */
+
+.container .rrighttop.ribbon-wrapper {
+/*position: absolute;
+right: 14px;
+*/
+position:absolute;
+right: 14px;
+border-bottom: 0px solid #ccc;
+border-top: 0px solid #ccc;
+-moz-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-moz-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+}
+.container .rrighttop .ribbon-front {
+	background-color: red;
+	height: 35px;
+	width: 270px;
+	position: relative;
+	left: -20px;
+	z-index: 2;
+}
+
+.container .rrighttop .ribbon-front,
+.container .rrighttop .ribbon-back-left,
+.container .rrighttop .ribbon-back-right {
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+.container .rrighttop .ribbon-edge-topleft,
+.container .rrighttop .ribbon-edge-topright,
+.container .rrighttop .ribbon-edge-bottomleft,
+.container .rrighttop .ribbon-edge-bottomright {
+	position: absolute;
+	z-index: 1;
+	border-style: solid;
+	height: 0px;
+	width: 0px;
+}
+
+.container .rrighttop .ribbon-edge-topleft,
+.container .rrighttop .ribbon-edge-topright {
+}
+
+.container .rrighttop .ribbon-edge-bottomleft,
+.container .rrighttop .ribbon-edge-bottomright {
+	top: 35px;
+}
+
+.container .rrighttop .ribbon-edge-topleft,
+.container .rrighttop .ribbon-edge-bottomleft {
+	left: -20px;
+	border-color: transparent #000000 transparent transparent;
+}
+
+.container .rrighttop .ribbon-edge-topleft {
+	top: -10px;
+	border-width: 10px 0px 0 0;
+}
+.container .rrighttop .ribbon-edge-bottomleft {
+	border-width: 0 0px 35px 0;
+}
+
+.container .rrighttop .ribbon-edge-topright,
+.container .rrighttop .ribbon-edge-bottomright {
+	left: 240px;
+	border-color: transparent transparent transparent #000000;
+}
+
+.container .rrighttop .ribbon-edge-topright {
+	top: 0px;
+	border-width: 0px 0 0 10px;
+}
+.container .rrighttop .ribbon-edge-bottomright {
+	border-width: 0 0 10px 10px;
+}
+
+.container .rrighttop .ribbon-back-left {
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	width: 0px;
+	height: 80px;
+	background-color: #8D0A0A;
+	z-index: 0;
+}
+
+.container .rrighttop .ribbon-back-right {
+	position: absolute;
+	top: 10px;
+	right: -20px;
+	width: 0px;
+	height: 35px;
+	background-color: #fff;
+	z-index: 0;
+}
+
+/* ribbon right style */
+.rib .rrighttop.ribbon-wrapper {
+/*position: absolute;
+right: 14px;
+*/
+position:absolute;
+left: 0px;
+border-bottom: 0px solid #ccc;
+border-top: 0px solid #ccc;
+-moz-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-moz-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+-webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+}
+.rib .rrighttop .ribbon-front {
+	background-color: red;
+	height: 35px;
+	width: 270px;
+	position: relative;
+	left: -20px;
+	z-index: 2;
+}
+
+.rib .rrighttop .ribbon-front,
+.rib .rrighttop .ribbon-back-left,
+.rib .rrighttop .ribbon-back-right {
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+.rib .rrighttop .ribbon-edge-topleft,
+.rib .rrighttop .ribbon-edge-topright,
+.rib .rrighttop .ribbon-edge-bottomleft,
+.rib .rrighttop .ribbon-edge-bottomright {
+	position: absolute;
+	z-index: 1;
+	border-style: solid;
+	height: 0px;
+	width: 0px;
+}
+
+.rib .rrighttop .ribbon-edge-topleft,
+.rib .rrighttop .ribbon-edge-topright {
+}
+
+.rib .rrighttop .ribbon-edge-bottomleft,
+.rib .rrighttop .ribbon-edge-bottomright {
+	top: 35px;
+}
+
+.rib .rrighttop .ribbon-edge-topleft,
+.rib .rrighttop .ribbon-edge-bottomleft {
+	left: -20px;
+	border-color: transparent #000000 transparent transparent;
+}
+
+.rib .rrighttop .ribbon-edge-topleft {
+	top: -10px;
+	border-width: 10px 0px 0 0;
+}
+.rib .rrighttop .ribbon-edge-bottomleft {
+	border-width: 0 0px 35px 0;
+}
+
+.rib .rrighttop .ribbon-edge-topright,
+.rib .rrighttop .ribbon-edge-bottomright {
+	left: 240px;
+	border-color: transparent transparent transparent #000000;
+}
+
+.rib .rrighttop .ribbon-edge-topright {
+	top: 0px;
+	border-width: 0px 0 0 10px;
+}
+.rib .rrighttop .ribbon-edge-bottomright {
+	border-width: 0 0 10px 10px;
+}
+
+.rib .rrighttop .ribbon-back-left {
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	width: 0px;
+	height: 80px;
+	background-color: #8D0A0A;
+	z-index: 0;
+}
+
+.rib .rrighttop .ribbon-back-right {
+	position: absolute;
+	top: 10px;
+	right: -20px;
+	width: 0px;
+	height: 35px;
+	background-color: #fff;
+	z-index: 0;
+}
+
+
+
+
+.message-threadhead {
+position: relative;
+padding: 7px 15px;
+margin-bottom: 2px;
+color: #404040;
+background-color: #E5E5E5;
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear, left top, left bottom, from(#E5E5E5), to(#E5E5E5));
+background-image: -moz-linear-gradient(top, #E5E5E5, #E5E5E5);
+background-image: -ms-linear-gradient(top, #E5E5E5, #E5E5E5);
+background-image: -webkit-gradient(linear, leftt top, left bottom, color-stop(0%, #E5E5E5), color-stop(100%, #E5E5E5));
+background-image: -webkit-linear-gradient(top, #E5E5E5, #E5E5E5);
+background-image: -o-linear-gradient(top, #E5E5E5, #E5E5E5);
+background-image: linear-gradient(top, #E5E5E5, #E5E5E5);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E5E5', endColorstr='#E5E5E5', GradientType=0);
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+border-color: #E5E5E5 #E5E5E5 #E4C652;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+border-width: 1px;
+border-style-top: solid;
+
+
+border-width: 1px;
+border-style: solid;
+-webkit-border-radius-top-left: 4px;
+-moz-border-radius-top-left: 4px;
+border-radius-top-left: 4px;
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+}
+
+

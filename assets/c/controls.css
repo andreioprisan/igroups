@@ -1,0 +1,360 @@
+/* Pagination */
+
+.vbx-content-menu .pagination {
+    float: right;
+	margin-right: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pagination a,
+.pagination .current {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    padding: 5px 8px;
+    color: #CCC;
+    background-color: #222;
+    text-decoration: none;
+	outline: none;
+	-moz-border-radius: 0.2em; /* FF1+ */
+	-webkit-border-radius: 0.2em; /* Saf3+, Chrome */
+	-khtml-border-radius: 0.2em; /* Konqueror */
+	border-radius: 0.2em; /* Standard. IE9 */
+
+	-webkit-background-clip: padding-box;
+}
+
+.pagination a:link,
+.pagination a:visited {
+    color: #BBB !important;
+}
+
+.pagination a:hover {
+    color: #DDD;
+}
+
+.pagination a:active {
+    color: #FFF;
+}
+
+.pagination .current {
+    color: #FFF;
+    background-color: #333;
+}
+
+.pagination .next a,
+.pagination .previous a,
+.pagination .first a,
+.pagination .last a {
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+/* Dialogs */
+
+.ui-dialog {
+    position: relative;
+    background: #FFF;
+    border: 3px solid #333;
+    text-align:left;
+	-moz-border-radius: 8px; /* FF1+ */
+	-webkit-border-radius: 8px; /* Saf3+, Chrome */
+	-khtml-border-radius: 8px; /* Konqueror */
+	border-radius: 8px; /* Standard. IE9 */
+	-webkit-background-clip: padding-box;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    position: relative;
+    margin: 2px;
+    padding: 10px 18px;
+    color: #FFF;
+    background-color: #222;
+	-moz-border-radius-topright: 4px; /* FF1+ */
+	-webkit-border-top-right-radius: 4px; /* Saf3+, Chrome */
+	-khtml-border-top-right-radius: 4px; /* Konqueror */
+	border-top-right-radius: 4px; /* Standard. IE9 */
+	-moz-border-radius-topleft: 4px; /* FF1+ */
+	-webkit-border-top-left-radius: 4px; /* Saf3+, Chrome */
+	-khtml-border-top-left-radius: 4px; /* Konqueror */
+	border-top-left-radius: 4px; /* Standard. IE9 */
+	border-bottom: 1px solid #1170a0;
+	-webkit-background-clip: padding-box;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+	display: none;
+}
+
+.ui-dialog .error-message {
+	margin: 10px 0 20px 0;
+	padding: 10px;
+	color: #900;
+	background-color: #FFECE8;
+	border: 1px solid #900;
+	-moz-border-radius: 4px; /* FF1+ */
+	-webkit-border-radius: 4px; /* Saf3+, Chrome */
+	-khtml-border-radius: 4px; /* Konqueror */
+	border-radius: 4px; /* Standard. IE9 */
+	-webkit-background-clip: padding-box;
+}
+
+.ui-dialog .ui-dialog-title {
+    font-size: 22px;
+}
+
+.ui-dialog .ui-dialog-content {
+    border: none !important;
+    padding: 10px 20px;
+}
+
+.ui-dialog p,
+.ui-dialog ul {
+	margin-bottom: 15px;
+}
+
+.ui-dialog :last-child {
+	margin-bottom: 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    padding: 20px;
+    text-align: left;
+    overflow: auto;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    /**
+     * @bugfix border-radius background bleed
+     * @see http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed
+     */
+    -webkit-background-clip: padding-box;
+
+
+
+	display:inline-block;
+	padding:5px 10px 6px;
+	font-size:13px;
+	line-height:normal;
+	color:#333;
+	text-shadow:0 1px 1px rgba(255, 255, 255, 0.75);
+	background-color:#e6e6e6;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+	background-image:-webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+	background-image:-moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+	background-image:-ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+	background-image:-o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+	background-image:linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+	background-repeat:no-repeat;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+	border:1px solid #ccc;
+	border-bottom-color:#bbb;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+	cursor:pointer;
+	-webkit-transition:0.1s linear all;
+	-moz-transition:0.1s linear all;
+	-ms-transition:0.1s linear all;
+	-o-transition:0.1s linear all;
+	transition:0.1s linear all;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-state-hover {
+color:#333333;text-decoration:none;background-position:0 -15px;
+}
+
+.ui-dialog .ui-resizable-se {
+    width: 14px;
+    height: 14px;
+    right: 3px;
+    bottom: 3px;
+	position: absolute;
+}
+
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+
+.ui-widget-overlay {
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-image: url(../i/overlay.png);
+    opacity:.80;
+    -moz-opacity:.80;
+    filter:alpha(opacity=80);
+}
+
+.usergroup-dialog {
+    border: 1px solid #CCC !important;
+}
+
+.users-and-groups-pane {
+    border: 1px solid #888;
+    height: 340px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.usergroup-dialog table {
+    width: 100%;
+}
+
+.usergroup-dialog td {
+    padding: 10px 5px;
+    background-color: #EEE;
+    border-bottom: 1px solid #DDD;
+    cursor: pointer;
+}
+
+.usergroup-dialog .hover td {
+    background-color: #FFC;
+}
+
+.usergroup-dialog a.edit-link {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+	background-color: #888;
+	padding: 5px 9px 5px 9px;
+	-moz-border-radius: 4px; /* FF1+ */
+	-webkit-border-radius: 4px; /* Saf3+, Chrome */
+	-khtml-border-radius: 4px; /* Konqueror */
+	border-radius: 4px; /* Standard. IE9 */
+
+	-webkit-background-clip: padding-box;
+}
+
+.usergroup-dialog a.edit-link:hover {
+	background-color: #666;
+}
+
+.usergroup-dialog a.edit-link:active {
+	background-color: #333;
+}
+
+/* Audio Dialog Tabs */
+
+#dialog-audio .modal-toolbar {
+    overflow: auto;
+}
+
+#dialog-audio .modal-tabs li {
+    display: inline;
+}
+
+#dialog-audio .modal-tabs li a {
+    display: block;
+    float: left;
+    margin-left: 15px;
+    padding: 10px 10px 7px 10px;
+    text-decoration: none;
+    background-color: #666;
+    border: 1px solid #222;
+    color: #ddd;
+	-moz-border-radius-topleft: 4px; /* FF1+ */
+	-webkit-border-top-left-radius: 4px; /* Saf3+, Chrome */
+	-khtml-border-top-left-radius: 4px; /* Konqueror */
+	border-top-left-radius: 4px; /* Standard. IE9 */
+	-moz-border-radius-topright: 4px; /* FF1+ */
+	-webkit-border-top-right-radius: 4px; /* Saf3+, Chrome */
+	-khtml-border-top-right-radius: 4px; /* Konqueror */
+	border-top-right-radius: 4px; /* Standard. IE9 */
+    outline: none;
+}
+
+#dialog-audio .modal-tabs li a.selected {
+    background-color: #FFF;
+    border-bottom: 1px solid #FFF;
+    color: #222;
+}
+
+#dialog-audio .modal-tab-view {
+    margin-top: -1px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 1px solid #222;
+    -moz-border-radius: 4px; /* FF1+ */
+    -webkit-border-radius: 4px; /* Saf3+, Chrome */
+    -khtml-border-radius: 4px; /* Konqueror */
+    border-radius: 4px; /* Standard. IE9 */
+    /**
+     * @bugfix border-radius background bleed
+     * @see http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed
+     */
+    -webkit-background-clip: padding-box;
+    overflow: auto;
+}
+
+
+#dialog-save-as p {
+	margin-bottom: 10px;
+}
+
+
+
+/* Dialog Tabs */
+
+.dialog-quick-tabs {
+    overflow: auto;
+}
+
+.dialog-quick-tabs li {
+    display: inline;
+}
+
+.dialog-quick-tabs li a {
+    display: block;
+    float: left;
+    margin-left: 15px;
+    padding: 7px 10px 10px 10px;
+    color: #777;
+    text-decoration: none;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    border-top: none;
+	-moz-border-radius-bottomright: 4px; /* FF1+ */
+	-webkit-border-bottom-right-radius: 4px; /* Saf3+, Chrome */
+	-khtml-border-bottom-right-radius: 4px; /* Konqueror */
+	border-bottom-right-radius: 4px; /* Standard. IE9 */
+	-moz-border-radius-bottomleft: 4px; /* FF1+ */
+	-webkit-border-bottom-left-radius: 4px; /* Saf3+, Chrome */
+	-khtml-border-bottom-left-radius: 4px; /* Konqueror */
+	border-bottom-left-radius: 4px; /* Standard. IE9 */
+    outline: none;
+}
+
+.dialog-quick-tabs li.selected a {
+    color: #FFF;
+    background-color: #3486B3;
+    background-color: #444;
+    border: none;
+}
+
+.dialog-quick-tab-view {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-bottom: 5px solid #3486B3;
+    border-bottom: 5px solid #444;
+    -moz-border-radius: 4px; /* FF1+ */
+	-webkit-border-radius: 4px; /* Saf3+, Chrome */
+	-khtml-border-radius: 4px; /* Konqueror */
+	border-radius: 4px; /* Standard. IE9 */
+
+	-webkit-background-clip: padding-box;
+    overflow: auto;
+}
+

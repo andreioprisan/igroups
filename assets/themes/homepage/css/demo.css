@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #E9ECF0 url(../images/demo_bg.jpg) 0 0 repeat-x;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	
+}
+
+a {
+	color:#3679B5;
+	text-decoration:none;
+}
+
+#content {
+	width:960px;
+	margin:0 auto;
+}
+
+#content .title_h1 {
+	text-align:center;
+	padding-top:30px;
+	height:120px;
+	
+}
+
+#content h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:60px;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+
+#calendar {
+	float:left;
+}
+
+.txt_description {
+	float:right; width:400px; line-height:150%;
+}
+
+.ul_demo_examples li {
+	width:200px;
+	float:left;
+}
+
+.clear { clear:both; }

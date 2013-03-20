@@ -1,0 +1,624 @@
+/* Reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td                                      {
+                                          margin: 0; padding: 0
+                                        }
+img                                     {
+                                          border: 0
+                                        }
+em,
+strong,
+th                                      {
+                                          font-weight: inherit;
+                                          font-style: inherit
+                                        }
+li                                      {
+                                          list-style: none
+                                        }
+caption,
+th                                      {
+                                          text-align: left
+                                        }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6                                      {
+                                          font-size: 100%; font-weight: normal
+                                        }
+html                                    {
+                                          height: 100%;
+                                          background: #d9dfeb;
+                                          font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+                                        }
+body                                    {
+                                          min-height: 100%;
+                                          overflow-y: scroll;
+                                          -webkit-font-smoothing: antialiased;
+                                          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+                                          background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+                                          background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+                                          /*background-attachment: fixed;;
+                                          background-repeat: repeat-x;*/
+                                        }
+/* Firefox can't handle Helvetica */
+@-moz-document url-prefix()                      { 
+    html           {
+                     font-family: Arial, sans-serif
+                   }
+                                        }
+a                                       {
+                                          color: #0068de;
+                                          text-decoration: none
+                                        }
+a:hover                                 {
+                                          color: #333;
+                                          text-decoration: underline
+                                        }
+/* Background */
+div#background                          {
+                                          display: none
+                                        }
+/* Header */
+div#header                              {
+                                          position: relative;
+                                          height: 108px
+                                        }
+div#header h1                           {
+                                          float: left;
+                                          width: 72px; height: 31px;
+                                          margin-top: 39px;
+                                          text-indent: -999em;
+                                          -wexbkit-backface-visibility: hidden
+                                        }
+div#header h1 a                         {
+                                          display: block;
+                                          height: 31px;
+                                          background: url(/assets/themes/bluelook/images/img/logo.png) no-repeat;
+                                          -webkit-transzition: opacity 300ms ease-in-out;
+                                        }
+div#header h1 a:hover                   {
+                                          opacity: 0.75
+                                        }
+div.navigation                          {
+                                          position: relative;
+                                          padding-top: 44px
+                                        }
+div.navigation div.signin               {
+                                          float: right
+                                        }
+div.navigation div.signin a             {
+                                          margin-left: 5px;
+                                          padding: 7px 1px 6px;
+                                          font-size: 12px;
+                                          text-decoration: none;
+                                          background: rgba(0, 0, 0, 0.2);
+                                          -o-border-radius: 14px;
+                                          -moz-border-radius: 14px;
+                                          -webkit-border-radius: 14px;
+                                          border-radius: 14px;
+                                          -webkit-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05);
+                                          -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+                                          box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05);
+                                          -webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
+                                          -moz-transition: -moz-box-shadow 0.1s ease;
+                                        }
+div.navigation ul.global                {
+                                          position: relative; float: right;
+                                          margin-right: 5px;
+                                          cursor: default
+                                        }
+div.navigation ul.global li.selected a  {
+                                          color: white;
+                                          text-decoration: none;
+                                          background: rgba(0, 0, 0, 0.07);
+                                          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0)));
+                                          -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.4);
+                                          -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.4);
+                                          box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.4);
+                                        }
+div.navigation ul.global li.selected a:hover
+                                        {
+                                          color: white
+                                        }
+div.navigation ul.global li             {
+                                          display: inline;
+                                          margin-left: 0
+                                        }
+div.navigation ul.global a              {
+                                          padding: 3px 11px;
+                                          color: #222;
+                                          font-size: 11px;
+                                          text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+                                          -o-border-radius: 9px;
+                                          -moz-border-radius: 9px;
+                                          -webkit-border-radius: 9px;
+                                          border-radius: 9px;
+                                        }
+div.navigation ul.global a:active       {
+                                          position: relative;
+                                          top: 1px
+                                        }
+div.navigation ul.global a:hover        {
+                                          color: white;
+                                          text-decoration: none;
+                                          background: rgba(0, 0, 0, 0.07)
+                                        }
+/* Sign in button */
+body.mozilla div.navigation div.signin a
+                                        {
+                                          padding-top: 6px
+                                        }
+/* Global Navigation */
+/* Small header */
+div#header                              {
+                                          height: 10px
+                                        }
+/* Footer */
+div#footer                              {
+                                          position: relative;
+                                          margin: 0 0 0; padding: 10px 0 10px;
+                                          font-size: 11px;
+                                          text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
+                                        }
+div#footer li.separator                 {
+                                          color: #97a2b3
+                                        }
+div#footer li.last                      {
+                                          border: 0
+                                        }
+div#footer li                           {
+                                          display: inline;
+                                          padding-right: 15px
+                                        }
+div#footer ul                           {
+                                          padding-left: 10px;
+										position: absolute;
+                                          top: 10px; right: 10px;
+
+                                        }
+div#footer p                            {
+                                          position: absolute;
+                                          top: 10px; left: 10px;
+                                          color: #777;
+                                          backgrouznd: #fff
+                                        }
+div#footer a                            {
+                                          color: #6f757c;
+                                          text-decoration: none;
+                                          backgrouznd: #fff
+                                        }
+div#footer a:hover                      {
+                                          color: #333;
+                                          text-decoration: underline
+                                        }
+/* Box drop shadow */
+div.box                                 {
+                                          position: relative;
+                                          -o-border-radius: 4px;
+                                          -moz-border-radius: 4px;
+                                          -webkit-border-radius: 4px;
+                                          border-radius: 4px;
+                                        }
+div.box-shadow                          {
+                                          position: absolute;
+                                          left: -9px;
+                                          width: 1290px;
+                                          z-index: -1
+                                        }
+div.box-shadow.top                      {
+                                          top: -7px;
+                                          height: 14px;
+                                          background: url(/assets/themes/bluelook/images/img/top.png)
+                                        }
+div.box-shadow.center                   {
+                                          top: 7px; bottom: 7px;
+                                          background: url(/assets/themes/bluelook/images/img/center_big2.png)
+                                        }
+div.box-shadow.bottom                   {
+                                          bottom: -10px;
+                                          height: 17px;
+                                          background: url(/assets/themes/bluelook/images/img/bottom.png)
+                                        }
+/* Center column for elements */
+div#header,
+div#introduction,
+div#action,
+div#tour,
+div#notify,
+div.invite-info,
+div.box,
+div#notification-view,
+div#footer                              {
+                                          width: 100%;
+                                          margin-right: auto; margin-left: auto;
+										  top: 8px;
+                                        }
+
+
+/* No text selection */
+a.button,
+label                                   {
+                                          -webkit-user-select: none;
+                                          -khtml-user-select: none;
+                                          -moz-user-select: none;
+                                          -o-user-select: none;
+                                          user-select: none;
+                                        }
+#merch div#main-body                    {
+                                          position: relative;
+                                          background: #f1f3f5;
+					  top: -10px;
+                                        }
+div#main-toolbar                        {
+                                          height: 43px;
+                                          margin: -1px -1px 0; padding: 1px;
+                                          background: #417cbd;
+                                          /*position: relative;*/
+                                          z-index: 30;
+										background-image: -webkit-gradient(linear, left top, left bottom, from(#417CBD), to(#2C619C));
+										background-image: -moz-linear-gradient(top, #417CBD, #2C619C);
+										background-image: -o-linear-gradient(top, #417CBD, #2C619C);
+										background-image: -ms-linear-gradient(top, #417CBD, #2C619C);
+										background-image: linear-gradient(top, #417CBD, #2C619C);
+										border-bottom: 0px solid black;
+										-webkit-box-shadow: inset 0 1px 0 #074889;
+										-moz-box-shadow: inset 0 1px 0 #75ACEA;
+										-o-box-shadow: inset 0 1px 0 #75ACEA;
+										box-shadow: inset 0 1px 0 #074889;
+										                                        }
+div#main-toolbar div.inner              {
+                                          position: relative;
+                                          height: 43px;
+                                          background: #2f7ed6;
+
+
+										background-image: -webkit-gradient(linear, left top, left bottom, from(#417CBD), to(#2C619C));
+										background-image: -moz-linear-gradient(top, #417CBD, #2C619C);
+										background-image: -o-linear-gradient(top, #417CBD, #2C619C);
+										background-image: -ms-linear-gradient(top, #417CBD, #2C619C);
+										background-image: linear-gradient(top, #417CBD, #2C619C);
+										border-bottom: 0px solid black;
+										-webkit-box-shadow: inset 0 1px 0 #074889;
+										-moz-box-shadow: inset 0 1px 0 #75ACEA;
+										-o-box-shadow: inset 0 1px 0 #75ACEA;
+										box-shadow: inset 0 1px 0 #074889;
+										                                        }
+div#livemode-switch                     {
+                                          width: 181px; height: 31px;
+                                          padding: 19px 0 0;
+                                          background: url(/assets/themes/bluelook/images/img/divider.png) 100% 2px no-repeat
+                                        }
+/* ## BREADCRUMBS */
+div#breadcrumbs                         {
+                                          position: absolute;
+                                          top: 0; left: 0px;
+                                          width: 566px; height: 49px;
+                                          z-index: 200
+                                        }
+/* Content Section */
+div#section                             {
+                                          position: relative;
+                                          min-height: 500px;
+                                          margin-left: 179px;
+                                          background-color: #fff;
+                                          border-left: 1px solid #b9c1d0;
+                                          z-index: 20;
+                                          -moz-border-bottom-right-radius: 4px;
+                                          border-bottom-right-radius: 4px;
+                                          -webkit-border-bottom-right-radius: 4px;
+                                        }
+div.switch-view                         {
+                                          position: relative;
+                                          width: 41px; height: 12px;
+                                          margin: auto;
+                                          -moz-user-select: none;
+                                          -webkit-user-select: none;
+                                          user-select: none;
+                                        }
+div.switch-view div.switch-background-off,
+div.switch-view div.switch-background-on,
+div.switch-view div.switch-knob         {
+                                          position: absolute;
+                                          top: 0; left: 0;
+                                          height: 100%
+                                        }
+div.switch-view div.switch-background-off
+                                        {
+                                          right: 0;
+                                          background: url(/assets/themes/bluelook/images/img/track-test.png)
+                                        }
+div.switch-view div.switch-background-on
+                                        {
+                                          right: 0;
+                                          background: url(/assets/themes/bluelook/images/img/track-live.png);
+                                          background-position: right;
+                                        }
+div.switch-view div.switch-knob         {
+                                          width: 22px; height: 14px;
+                                          background: url(/assets/themes/bluelook/images/img/knob.png)
+                                        }
+div.switch-view label.active            {
+                                          color: #fff
+                                        }
+div.switch-view label.off               {
+                                          left: -40px;
+                                          width: 30px;
+                                          text-align: right
+                                        }
+div.switch-view label.on                {
+                                          right: -39px;
+                                          width: 30px
+                                        }
+div.switch-view label                   {
+                                          position: absolute;
+                                          top: -1px;
+                                          color: #a1c3e9;
+                                          font-size: 10px; font-weight: bold;
+                                          text-transform: uppercase;
+                                          -webkit-transition: color 0.2s ease-in-out;
+                                          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
+                                        }
+div.dashboard-view                      {
+                                          position: relative;
+                                          /* Summary */
+                                          /* Block */
+                                          /* Divider */
+                                          /* Section Header */
+                                          /* Charts */
+                                          /* Loading dashboard indicator */
+                                        }
+div.dashboard-view div.section-header   {
+                                          position: relative;
+                                          height: 25px;
+                                          padding: 25px 0 20px;
+                                          /* Title */
+                                          /* Line */
+                                          /* Date Range */
+                                        }
+div.dashboard-view div.section-header h3
+                                        {
+                                          position: relative;
+                                          margin-bottom: 8px;
+                                          color: #545454;
+                                          font-size: 12px; font-weight: bold;
+                                          z-index: 20;
+                                          text-shadow: 0 1px 0 #fff;
+                                        }
+div.dashboard-view div.section-header h3 span
+                                        {
+                                          padding-right: 15px;
+                                          background: #fefefe
+                                        }
+div.dashboard-view div.section-header hr
+                                        {
+                                          position: absolute;
+                                          top: 33px;
+                                          width: 100%;
+                                          margin: 0;
+                                          z-index: 10;
+                                          border-top-color: #e7e7e7;
+                                        }
+div.dashboard-view div.test-badge       {
+                                          position: absolute; display: none;
+                                          top: 0; right: 0;
+                                          width: 54px; height: 55px;
+                                          z-index: 20;
+                                          background: url(/assets/themes/bluelook/images/img/test-badge.png);
+                                        }
+div.dashboard-view div.summary          {
+                                          position: relative;
+                                          left: -1px;
+                                          width: 105%;
+                                          padding: 5px 30px 5px 0px;
+                                          border-top: 0;
+                                          background: #233143;
+                                          background-image: -webkit-gradient(linear, left top, left bottom, from(#233143), to(#3e4859));
+                                          background-image: -moz-linear-gradient(top, #233143, #3e4859);
+                                          background-image: -o-linear-gradient(top, #233143, #3e4859);
+                                          -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.27);
+                                          -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.27);
+                                          box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.27);
+                                          -o-border-bottom-left-radius: 1px;
+                                          -moz-border-bottom-left-radius: 1px;
+                                          -webkit-border-bottom-left-radius: 1px;
+                                          border-bottom-left-radius: 1px;
+                                          -o-border-bottom-right-radius: 1px;
+                                          -moz-border-bottom-right-radius: 1px;
+                                          -webkit-border-bottom-right-radius: 1px;
+                                          border-bottom-right-radius: 1px;
+                                          border: 1px solid rgba(0, 0, 0, 0.15);
+                                          /* Value */
+                                          /* Label */
+                                        }
+div.dashboard-view div.summary div.summary-block
+                                        {
+                                          float: left;
+                                          width: 16.0%;
+                                          text-align: center;
+                                        }
+div.dashboard-view div.summary div.value
+                                        {
+                                          height: 26px;
+                                          color: #fff;
+                                          font-size: 26px; font-weight: bold;
+                                          text-shadow: 0 2px 6px rgba(0, 0, 0, 0.43)
+                                        }
+div.dashboard-view div.summary div.value span.container
+                                        {
+                                          position: relative; display: inline-block
+                                        }
+div.dashboard-view div.summary div.label
+                                        {
+                                          margin-top: 5px;
+                                          color: #7a828d;
+                                          font-size: 11px; font-weight: bold;
+                                          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.27)
+                                        }
+div.dashboard-view div.charts           {
+                                          min-height: 506px;
+                                          padding: 0 30px 0 30px;
+                                          background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#fafafa));
+                                          background-image: -moz-linear-gradient(top, white, #fafafa);
+                                          background-image: -o-linear-gradient(top, white, #fafafa);
+                                          -o-border-bottom-right-radius: 4px;
+                                          -moz-border-bottom-right-radius: 4px;
+                                          -webkit-border-bottom-right-radius: 4px;
+                                          border-bottom-right-radius: 4px;
+                                        }
+div.dashboard-view hr                   {
+                                          display: block;
+                                          margin: 0 30px;
+                                          border-top: 1px dotted #ddd; border-bottom: 1px dotted #fff;
+                                          border: 0;
+                                          background: none;
+                                        }
+/* Webkit only hack */
+@media screen and (-webkit-min-device-pixel-ratio:0)                             { 
+    div.dashboard-view div.summary strong[data-text]::after
+                                            {
+                                              position: absolute;
+                                              left: 0;
+                                              color: #3e4859;
+                                              content: attr(data-text);
+                                              z-index: 2;
+                                              pointer-events: none;
+                                              -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.12)));
+                                            }
+                                        }
+div.quicksearch-view                    {
+                                          position: absolute;
+                                          top: 10px; right: 16px;
+                                          z-index: 30
+                                        }
+div#sidebar-view-gradient               {
+                                          position: absolute;
+                                          top: 51px; bottom: 0; left: 177px;
+                                          width: 2px;
+                                          z-index: 20;
+                                          pointer-events: none;
+                                          background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.075)));
+                                          background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.075));
+                                          background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.075));
+                                        }
+/* NOTE: To change the background color of the sidebar, it's done on #merch div#main-body */
+div.sidebar-view                        {
+                                          position: absolute;
+                                          width: 179px;
+                                          z-index: 10
+                                        }
+div.sidebar-view ul                     {
+                                          margin-bottom: 5px;
+                                          padding: 5px 0 0px;
+										  margin: 0 0 0px 0px;
+                                        }
+div.sidebar-view ul li.dashboard span   {
+												background: url(/assets/themes/bluelook/images/glyph2/81-dashboard2.png) no-repeat;
+	                                        }
+div.sidebar-view ul li.customers span   {
+                                          background-position: 1px -41px
+                                        }
+div.sidebar-view ul li.transfers span   {
+                                          background-position: 1px -65px
+                                        }
+div.sidebar-view ul li.webhooks span    {
+                                          background-position: 1px -137px
+                                        }
+div.sidebar-view ul li.stats span    {
+											background: url(/assets/themes/bluelook/images/glyph2/122-stats2.png) no-repeat;
+                                        }
+div.sidebar-view ul li.builder span     {
+											background: url(/assets/themes/bluelook/images/glyph2/55-network2.png) no-repeat;
+                                        }
+div.sidebar-view ul li.numbers span     {
+											background: url(/assets/themes/bluelook/images/glyph2/75-phone2.png) no-repeat;
+                                        }
+div.sidebar-view ul li.devices span     {
+											background: url(/assets/themes/bluelook/images/glyph2/32-iphone.png) no-repeat;
+                                        }
+div.sidebar-view ul li.members span     {
+											background: url(/assets/themes/bluelook/images/glyph2/112-group2.png) no-repeat;
+											left: -2px;
+											position: relative;                                          
+											padding-left: 37px;
+                                        }
+div.sidebar-view ul li.analytics span     {
+											background: url(/assets/themes/bluelook/images/glyph2/17-bar-chart2.png) no-repeat;
+                                        }
+div.sidebar-view ul li.schedule span     {
+											background: url(/assets/themes/bluelook/images/glyph2/11-clock2.png) no-repeat;
+                                        }
+div.sidebar-view ul li.polls span     {
+											background: url(/assets/themes/bluelook/images/glyph2/117-todo.png) no-repeat;
+                                        }
+
+
+div.sidebar-view ul li.selected a       {
+                                          color: #000;
+                                          background: #e7edf3;
+                                          border-top-color: #bed3ea;
+                                          border-bottom-color: #bed3ea;
+                                        }
+div.sidebar-view ul li.messages span       {
+											background: url(/assets/themes/bluelook/images/glyph2/18-envelope2.png) no-repeat;
+                                        }
+div.sidebar-view ul li                  {
+                                          padding: 0;
+                                        }
+div.sidebar-view ul li span             {
+                                          padding: 5px 15px 5px 34px;
+                                          background: url(/assets/themes/bluelook/images/img/icons2.png) no-repeat
+                                        }
+div.sidebar-view ul li a                {
+                                          display: block;
+                                          height: 20px;
+                                          padding: 10px 0 0 20px;
+                                          color: #333;
+                                          border-top: 1px solid #f1f3f5; border-bottom: 1px solid #f1f3f5;
+                                          font-size: 11px;
+                                          text-decoration: none;
+                                          line-height: 12px;
+                                          font-family: Arial;
+                                          text-shadow: 0 1px 0 white;
+                                        }
+div.sidebar-view ul li a:active         {
+                                          background: #e7edf3
+                                        }
+div.sidebar-view ul li a:hover          {
+                                          color: #333;
+                                          background: #ebeff3;
+                                          border-color: #ebedf0;
+                                        }
+div.sidebar-view h4                     {
+                                          padding: 10px 0 0 10px;
+                                          color: #96a0ad;
+                                          font-size: 10px; font-weight: bold;
+                                          text-transform: uppercase;
+                                          text-shadow: 0 1px 0 white;
+                                          font-family: Arial;
+                                        }

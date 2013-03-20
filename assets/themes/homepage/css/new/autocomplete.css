@@ -1,0 +1,61 @@
+/* Copyright: Guillermo Rauch <http://devthought.com/> - Distributed under MIT - Keep this message! */
+
+.input-prepend ul {
+	clear: none;
+}
+/* TextboxList sample CSS */
+
+.input-prepend ul.holder { 
+margin: 0; 
+border: 0px solid #999; 
+overflow: hidden;
+height: 1%; 
+padding: 2px 2px 0; 
+background: white;
+width: 218px;
+clear: none;
+height: 28px;
+-webkit-border-radius: 0 3px 3px 0;
+-moz-border-radius: 0 3px 3px 0;
+border-radius: 0 3px 3px 0;
+
+}
+
+.input-prepend *:first-child+html ul.holder { padding-bottom: 1px; } * html ul.holder { padding-bottom: 1px; } /* ie7 and below */
+.input-prepend ul.holder li { 
+clear: none;
+float: left; list-style-type: none; 
+margin: 4px 0px 0px 5px;
+white-space:nowrap;
+color: black;
+}
+
+.input-prepend ul.holder li.bit-box, ul.holder li.bit-input input { font: 11px "Lucida Grande", "Verdana"; }
+.input-prepend ul.holder li.bit-box { -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border: 1px solid #CAD8F3; background: #DEE7F8; padding: 1px 5px 2px; }
+.input-prepend ul.holder li.bit-box-focus { border-color: #598BEC; background: #598BEC; color: #fff; }
+.input-prepend ul.holder li.bit-input input { width: auto; overflow:visible; margin: 0; border: 0px; outline: 0; padding: 3px 0px 2px; border: 0px; background: transparent;  } /* no left/right padding here please */
+.input-prepend ul.holder li.bit-input input.smallinput { width: 20px; border: 0px; background: transparent; }
+
+.input-prepend ul.holder li.bit-box, #apple-list ul.holder li.bit-box { padding-right: 15px; position: relative; z-index:1000;}
+.input-prepend #apple-list ul.holder li.bit-input { margin: 0; }
+.input-prepend #apple-list ul.holder li.bit-input input.smallinput { width: 5px; }
+.input-prepend ul.holder li.bit-hover { background: #BBCEF1; border: 1px solid #6D95E0; }
+.input-prepend ul.holder li.bit-box-focus { border-color: #598BEC; background: #598BEC; color: #fff; }
+.input-prepend ul.holder li.bit-box a.closebutton { position: absolute; right: 4px; top: 5px; display: block; width: 7px; height: 7px; font-size: 1px; background: url('close.gif'); }
+.input-prepend ul.holder li.bit-box a.closebutton:hover { background-position: 7px; }
+.input-prepend ul.holder li.bit-box-focus a.closebutton, ul.holder li.bit-box-focus a.closebutton:hover { background-position: bottom; }
+
+/* Autocompleter */
+
+.input-prepend .facebook-auto { display: none; position: absolute; width: 220px; background: #eee; z-index:1001; right:65px; color:black;}
+.input-prepend .facebook-auto .default { padding: 5px 7px; border: 1px solid #ccc; border-width: 0 1px 1px;font-family:"Lucida Grande","Verdana"; font-size:11px; }
+.input-prepend .facebook-auto ul { display: none; margin: 0; padding: 0; overflow: auto; position:absolute; z-index:9999}
+.input-prepend .facebook-auto ul li { padding: 5px 12px; z-index: 1000; cursor: pointer; margin: 0; list-style-type: none; border: 1px solid #ccc; border-width: 0 1px 1px; font: 11px "Lucida Grande", "Verdana"; background-color: #eee }
+.input-prepend .facebook-auto ul li em { font-weight: bold; font-style: normal; background: #ccc; }
+.input-prepend .facebook-auto ul li.auto-focus { background: #4173CC; color: #fff; }
+.input-prepend .facebook-auto ul li.auto-focus em { background: none; }
+.input-prepend .deleted { background-color:#4173CC !important; color:#ffffff !important;}
+.input-prepend .hidden { display:none;}
+
+.input-prepend #demo ul.holder li.bit-input input { padding: 2px 0 1px; border: 1px solid #999; }
+.input-prepend .ie6fix {height:1px;width:1px; position:absolute;top:0px;left:0px;z-index:1;}

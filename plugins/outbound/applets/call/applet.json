@@ -1,0 +1,8 @@
+{
+	"name" : "New Call",
+	"sms_name" : "New Call",
+	"voice_title" : "New Call",
+	"sms_title" : "New Call",
+	"description" : "Call (someone else) from a flow.",
+	"type" : ["sms", "voice"]
+}

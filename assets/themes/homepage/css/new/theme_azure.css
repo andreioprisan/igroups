@@ -1,0 +1,126 @@
+/* Override some defaults */
+html, body {
+	background-color: #eee;
+}
+body {
+	padding-top: 0px; /* 40px to make the container go all the way to the bottom of the topbar */
+}
+.container > footer p {
+	text-align: center; /* center align it with the container */
+}
+.container {
+	width: 100%; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+}
+
+.container .brand {
+	background-color: red;
+	align: left;
+}
+
+/* The white background content wrapper */
+.content {
+	background-color: white;
+	padding: 0px;
+	margin: 0px 0px; /* negative indent the amount of the padding to maintain the grid system */
+}
+
+/* Page header tweaks */
+.page-header {
+	background-color: #f5f5f5;
+	padding: 20px 20px 10px;
+	margin: -20px -20px 20px;
+}
+
+/* Styles you shouldn't keep as they are for displaying this base example only */
+.content .span10,
+.content .span4 {
+	min-height: 500px;
+}
+
+.container-fluid > .content {
+	margin-left: 210px;
+}
+
+.container-fluid .content {
+	padding-left: 0px;
+}
+/* Give a quick and non-cross-browser friendly divider */
+.content .span4 {
+	margin-left: 0;
+	padding-left: 19px;
+	border-left: 1px solid #eee;
+}
+
+.navbar .btn {
+	border: 0;
+}
+
+.navbar div > ul.mid-nav, .nav.mid-nav {
+	font-color: black;
+}
+
+
+.navbar div > ul.secondary-nav, .nav.secondary-nav {
+	float: right;
+	margin-left: 20px;
+	margin-right: 50px;
+	background-color: #0064CD;
+	font-color: black;
+}
+
+.secondary-nav {
+	background-color: #0064CD;
+}
+
+.label {
+	width: 300px;
+}
+
+.label a {
+	color: white;
+	text-decoration: none;
+}
+
+.label a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+	background-color: #eee;
+	min-width: 940px;
+	padding: 30px 0;
+	text-shadow: 0 1px 0 #fff;
+	border-top: 1px solid #e5e5e5;
+	-webkit-box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
+	-moz-box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
+	box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
+}
+.footer p {
+	color: #555;
+}
+
+.inner .content {
+	margin: 0px 0px
+}
+
+.input-prepend .add-on-name, .input-append .add-on-name {
+	position: relative;
+	background: white;
+	border: 1px solid #fff;
+	z-index: 2;
+	float: left;
+	display: block;
+	width: auto;
+	min-width: 16px;
+	height: 18px;
+	padding: 4px 4px 4px 5px;
+	margin-right: -1px;
+	font-weight: normal;
+	line-height: 18px;
+	color: black;
+	text-align: center;
+	text-shadow: 0 1px 0 white;
+}

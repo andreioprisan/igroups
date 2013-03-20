@@ -1,0 +1,14 @@
+{
+    "name" : "FlowTest",
+    "author" : "Tim Lytle <tim@timlytle.net>",
+    "description" : "FlowTest",
+    "url" : "https://github.com/tjlytle/FlowTest",
+    "links" : [
+        {
+            "url" : "flowtest",
+            "script" : "pages/flowtest.php",
+            "label" : "Flow Test",
+            "menu" : "admin"
+        }
+    ]
+}

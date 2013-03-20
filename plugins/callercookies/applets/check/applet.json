@@ -1,0 +1,8 @@
+{
+	"name" : "Check Cookie",
+	"sms_name" : "Check Cookie",
+	"voice_title" : "Check Cookie",
+	"sms_title" : "Check Cookie",
+	"description" : "Check a cookie's value.",
+	"type" : ["sms", "voice"]
+}

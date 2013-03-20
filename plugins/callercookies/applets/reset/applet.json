@@ -1,0 +1,8 @@
+{
+	"name" : "Reset Cookies",
+	"sms_name" : "Reset Cookies",
+	"voice_title" : "Reset Cookies",
+	"sms_title" : "Reset Cookies",
+	"description" : "Clears all cookies.",
+	"type" : ["sms", "voice"]
+}

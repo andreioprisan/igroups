@@ -1,0 +1,77 @@
+/* left col navigation buttons */
+TD.leftNav { background-color: #6699CC; font-size: 10px; font-family: Verdana, Sans-serif; color: #FFFFFF; }
+TD.leftNavHighlight { background-color: #CAE4FD; }
+TD.leftNavBorder { background-color: #000000; }
+TD.leftNavHeavy { background-color: #6699CC; font-size: 10px; font-family: Verdana, Sans-serif; color: #FFFFFF; font-weight: bold; }
+TD.leftNavSelected { background-color: #B2D6FA; font-size: 10px; font-family: Verdana, Sans-serif; color: #214F7E; }
+TD.leftNavSelectedHeavy { background-color: #B2D6FA; font-size: 10px; font-family: Verdana, Sans-serif; color: #214F7E; font-weight: bold }
+TD.leftNavWhiteSelected{ background-color: #FFFFFF; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; }
+TD.leftNavWhiteSelectedHeavy { background-color: #FFFFFF; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; font-weight: bold; }
+TD.leftNavStep { background-color: #336699; font-size: 10px; font-family: Verdana, Sans-serif; color: #CCCCCC; }
+TD.leftNavStepHeavy { background-color: #336699; font-size: 10px; font-family: Verdana, Sans-serif; color: #CCCCCC; font-weight: bold; }
+TD.leftNavStepSelected { background-color: #D6E7F8; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; }
+TD.leftNavStepSelectedHeavy { background-color: #D6E7F8; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; font-weight: bold; }
+A.leftNav { color: #FFFFFF; text-decoration: none; }
+A.leftNav:hover { color: #CCFFFF; text-decoration: none; }
+A.leftNavHeavy { color: #ffffff; text-decoration: none; font-weight: bold; }
+A.leftNavHeavy:hover { color: #CCFFFF; text-decoration: none; font-weight: bold; }
+A.leftNavSelected { color: #214F7E; text-decoration: none; }
+A.leftNavSelectedHeavy { color: #214F7E; text-decoration: none; font-weight: bold; }
+
+
+/* brand header */
+TD.headerBlue { background-color: #6699CC; font-size: 10px; font-family: Verdana, Sans-serif; color: #FFFFFF; }
+TD.headerGrey { background-color: #EAEFEF; font-size: 10px; font-family: Verdana, Sans-serif; color: #FFFFFF; }
+TD.headerWhite { background-color: #FFFFFF; font-size: 10px; font-family: Verdana, Sans-serif; color: #FFFFFF; }
+
+
+/* main site */
+TD.headerText { background-color: #FFFFFF; font-size: 24px; font-family: Arial, Sans-serif; color: #000000; font-weight: bold; }
+TD.blackLine { background-color: #000000; font-size: 10px; font-family: Verdana, Sans-serif; color: #FFFFFF; }
+TD.lightBlue { background-color: #D6E7F8; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; }
+TD.lightBlueHeavy { background-color: #D6E7F8; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; font-weight: bold; }
+TD.midBlue { background-color: #B2D6FA; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; }
+TD.midBlueheavy { background-color: #B2D6FA; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; font-weight: bold; }
+TD.deepBlue { background-color: #336699; font-size: 10px; font-family: Verdana, Sans-serif; color: #FFFFFF; }
+TD.deepBlueheavy { background-color: #336699; font-size: 10px; font-family: Verdana, Sans-serif; color: #CCCCCC; font-weight: bold; }
+TD.darkBlueBorder { background-color: #336699;}
+TD.lightGrey { background-color: #EEEEEE; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; }
+TD.lightGreyHeavy { background-color: #EEEEEE; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; font-weight: bold; }
+TD.midGrey { background-color: #DDDDDD; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; }
+TD.midGreyHeavy { background-color: #DDDDDD; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; font-weight: bold; }
+TD.darkGreyBorder { background-color: #999999; }
+TD.whiteBorder { background-color: #FFFFFF; }
+
+
+
+/* text classes */
+.text { font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; }
+.textHeavy { font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; font-weight: bold; }
+.textBlue { color: #336699; font-size: 10px; font-family: Verdana, Sans-serif; }
+.textBlueHeavyDomains { color: #336699; font-size: 10px; font-family: Verdana, Sans-serif; font-weight: bold; }
+.textBlueHeader { color: #214FE7; font-size: 10px; font-family: Verdana, Sans-serif; }
+.textBlueHeaderHeavy { color: #214FE7; font-size: 10px; font-family: Verdana, Sans-serif; font-weight: bold; }
+.textWhite { font-size: 10px; font-family: Verdana, Sans-serif; color: #FFFFFF; }
+.textWhiteHeavy { font-size: 10px; font-family: Verdana, Sans-serif; color: #FFFFFF; font-weight: bold; }
+.textRedHeavy { font-size: 10px; font-family: Verdana, Sans-serif; color: #FF0000; font-weight: bold; }
+.textError { font-size: 10px; font-family: Verdana, Sans-serif; color: #FF0000; }
+.textHeavyError { font-size: 10px; font-family: Verdana, Sans-serif; color: #FF0000; font-weight: bold; }
+
+/* link classes */
+A.blueLink {color: #214F7E; }
+A.blueLinkHeavy { color: #214F7E; font-weight: bold; }
+
+
+/*tr/domains cross css*/
+.domainSelectTitlemain { color: #214FE7; font-size: 10px; font-family: Verdana, Sans-serif; font-weight: bold; }
+TD.domainSelectTitleBordermain { background-color: #336699;}
+TD.domainSelectBG { background-color: #D6E7F8; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; }
+.domainSelectTitlesub { color: #214FE7; font-size: 10px; font-family: Verdana, Sans-serif; font-weight: bold; }
+TD.domainSelectTitleBordersub { background-color: #336699;}
+TD.domainSelectBGsub { background-color: #D6E7F8; font-size: 10px; font-family: Verdana, Sans-serif; color: #000000; }
+.domainSelectTitle { color: #214FE7; font-size: 10px; font-family: Verdana, Sans-serif; font-weight: bold; }
+TD.domainSelectTitleBorder { background-color: #336699;}
+
+
+.subdomainSelectTitle { color: #214FE7; font-size: 10px; font-family: Verdana, Sans-serif; font-weight: bold; }
+TD.subdomainSelectTitleBorder { background-color: #336699;}

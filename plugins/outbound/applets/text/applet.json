@@ -1,0 +1,8 @@
+{
+	"name" : "New Text",
+	"sms_name" : "New Text",
+	"voice_title" : "New Text",
+	"sms_title" : "New Text",
+	"description" : "Text (someone else) from a flow.",
+	"type" : ["sms", "voice"]
+}

@@ -1,0 +1,12 @@
+{
+	"name" : "Polls",
+	"author" : "Chad Smith <chad@nospam.me>",
+	"description" : "Allows for phone and text message polling.",
+	"url" : "http://twitter.com/chadsmith",
+	"links" : [{
+		"menu" : "Polls",
+		"url" : "polls",
+		"script" : "polls.php",
+		"label" : "Manage Polls"
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	"name" : "Outbound Flows",
+	"author" : "Chad Smith <chad@nospam.me>",
+	"description" : "Lets you call out with a flow now or later. Start or schedule calls and messages within a flow.",
+	"url" : "http://twitter.com/chadsmith",
+	"links" : [{
+		"menu" : "Outbound",
+		"url" : "outbound",
+		"script" : "outbound.php",
+		"label" : "Start Flow"
+	},
+	{
+		"menu" : "Outbound",
+		"url" : "outbound/schedule",
+		"script" : "schedule.php",
+		"label" : "Schedule Flow"
+	},
+	{
+		"menu" : "Outbound",
+		"url" : "outbound/queue",
+		"script" : "queue.php",
+		"label" : "Manage Queue"
+	},
+	{
+		"url" : "outbound/cron",
+		"script" : "queue.php",
+		"hook" : true
+	}]
+}

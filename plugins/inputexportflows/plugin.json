@@ -1,0 +1,18 @@
+{
+	"name" : "Export Flow",
+	"author" : "Chad Smith <chad@nospam.me>",
+	"description" : "Import and export flows.",
+	"url" : "http://twitter.com/chadsmith",
+	"links" : [{
+		"menu" : "Import / Export",
+		"url" : "export",
+		"script" : "export.php",
+		"label" : "Export Flow"
+	},
+	{
+		"menu" : "Import / Export",
+		"url" : "import",
+		"script" : "import.php",
+		"label" : "Import Flow"
+	}]
+}

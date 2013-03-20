@@ -1,0 +1,966 @@
+@font-face {
+	font-family: Titillium;
+	src: url('/asset/images/openlook/TitilliumText600wt.otf');
+}
+
+@font-face {
+	font-family: Titillium;
+	font-weight: 100;
+	src: url('/asset/images/openlook/TitilliumText250wt.otf');
+}
+
+@font-face {
+	font-family: Titillium;
+	font-weight: bold;
+	src: url('/asset/images/openlook/TitilliumText15L.otf');
+}
+
+
+body {
+	font-family: Titillium, "Helvetica Neue", "HelveticaNeue", helvetica, sans-serif;
+	font-size: 14px;
+	color: #777;
+	margin: 0px;
+	height: 100%;
+	background: #b4b4b4 url(/asset/images/openlook/shadow-lr.png) repeat-y left top;
+	-webkit-text-stroke: 1px transparent;
+}
+
+@media only screen and (max-device-width:480px) {body{-webkit-text-stroke:0 black;}}
+
+a {
+	text-decoration: none;
+	-webkit-transition: color .25s ease-out;
+}
+
+a:focus {
+	outline: none;
+}
+
+img {
+	border: none;
+}
+
+strong {
+	color: #444;
+}
+
+hr {
+	clear: left;
+	border: 0;
+	height: 1px;
+	background-color: #d6d6d6;
+	margin: 40px 0;
+	padding: 0;
+}
+
+a.toggle {
+	float: left;
+	width: 40px;
+	height: 18px;
+	background: transparent url(/asset/images/openlook/toggle.png) no-repeat left top;
+}
+
+a:active.toggle, a.toggle.on {
+	background-position: right top;
+}
+
+.left {
+	float: left !important;
+}
+
+.right {
+	float: right !important;
+	clear: right;
+}
+
+.clear {
+	clear: left !important;
+}
+
+select {
+	display: block;
+	opacity: 0.0;
+	position: absolute;
+	z-index: 2;
+}
+
+.selectbox {
+	float: left;
+	margin: -6px 0 0 6px !important;
+}
+
+.selectbox .text {
+	float: left;
+	font-size: 12px;
+	color: #414141;
+	text-shadow: 0 1px 2px #fff;
+	margin: 0;
+	padding-right: 26px;
+	height: 27px;
+	overflow: hidden;
+	background: transparent url(/asset/images/openlook/dd-select.png) no-repeat right -27px;
+}
+
+.selectbox .text span {
+	float: left;
+	margin: 0;
+	height: 29px;
+	padding: 7px 0 0 10px;
+	background: transparent url(/asset/images/openlook/dd-select.png) no-repeat left top;
+}
+
+.openlookbox {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+/* HEADER */
+
+#oplheader {
+	display: block;
+	position: fixed;
+	min-width: 1000px;
+	width: 1%;
+	z-index: 5;
+	background-color: #b4b4b4;
+}
+
+#oplheader .constant {
+	min-width: 920px;
+	height: 84px;
+	width: 100%;
+}
+
+#oplheader h1 {
+	float: left;
+	padding: 21px 0 0 40px;
+	margin: 0;
+	text-indent: -99999px;
+}
+
+#oplheader h1 a {
+	display: block;
+	width: 212px;
+	height: 48px;
+	color: #fff;
+}
+
+#global-nav {
+	float: left;
+	margin-left: 55px;
+	margin-top: 34px;
+}
+
+#global-nav a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 1px 5px #161718;
+	padding: 8px 9px 4px 9px;
+	margin-right: 30px;
+	opacity: 0.5;
+}
+
+#global-nav a:hover {
+	opacity: 1;
+}
+
+#global-nav a.active {
+	opacity: 1;
+	background-color: rgba(255,255,255,0.1);
+	border: 1px solid rgba(255,255,255,0.1);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0 0 4px #161718;
+	-webkit-box-shadow: 0 0 4px #161718;
+	-moz-box-shadow: 0 0 4px #161718;
+}
+
+#imp-msg {
+	float: left;
+	margin-left: 40px;
+	margin-top: 36px;
+}
+
+#imp-msg a {
+	color: #fff;
+	font-size: 12px;
+	text-shadow: 0 1px 2px #000;
+	padding-right: 13px;
+	background: transparent url(/asset/images/openlook/link-arrow.png) no-repeat right 2px;
+}
+
+#imp-msg a:hover {
+	color: #999;
+}
+
+#acct-controls {
+	float: right;
+	margin: 14px 40px 0 0;
+	width: 354px;
+}
+
+#acct-controls a {
+	float: left;
+	margin: 0 40px 0 0;
+	text-indent: -99999px;
+}
+
+
+a#forgot, a#back-login {
+	float: right;
+	margin: 4px 0 0 0;
+	font-size: 11px;
+	text-shadow: 0 1px 1px #fff;
+	color: #444;
+}
+
+a:hover#forgot, a:hover#back-login {
+	color: #111;
+}
+
+a#remember {
+	margin-top: -3px;
+	margin-left: 14px;
+}
+
+a#remember + span {
+	float: right;
+	margin-top: 1px;
+	text-shadow: 0 1px 1px #fff;
+	font-size: 11px;
+}
+
+/* CONTENT */
+
+.oplholder {
+	position: absolute;
+	margin: 0;
+	top: 0;
+	width: 1%;
+	min-width: 1000px;
+	max-width: 1000px;
+	height: 100%;
+	min-height: 100%;
+}
+
+.inner {
+	position: relative;
+	margin: 0px -20px 0px;
+	height: 100%;
+	min-height: 100%;
+}
+
+#bgshadow {
+	position: fixed;
+	width: 100%;
+	height: 100% !important;
+	min-height: 100%;
+	background: url(/asset/images/openlook/shadow-lr.png) repeat-y right top;
+}
+
+.oplspacer {
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	z-index: 1;
+	height: 47px;
+}
+
+.oplspacer-inner {
+	position: relative;
+	margin: 84px 14px 0 14px;
+	height: 13px;
+}
+
+.oplcontent {
+	display: block;
+	position: relative;
+	height: auto !important;
+	min-height: 100%;
+	overflow: auto;
+	background-color: #fff;
+}
+
+.oplcontent .oplspacer {
+	position: relative;
+	background-color: transparent;
+}
+
+/* MAIN NAV */
+
+.oplmenu-holder {
+	clear: left;
+	height: 63px;
+	margin-top: 0px;
+	padding: 0 0 0 1px;
+	background: transparent url(/asset/images/openlook/shadow-lr.png) repeat-y left top;
+}
+
+.menu-inner {
+	height: 43px;
+	padding: 0 1px 0 0;
+	background: transparent url(/asset/images/openlook/shadow-lr.png) repeat-y right top;
+}
+
+#main-nav {
+	border: solid 1px #acacac;
+	padding: 5px 23px 5px 23px;
+	height: 41px;
+	text-shadow: 0 1px 1px #f7f7f7;
+	font-size: 14px;
+	overflow: hidden;
+/*	background: transparent url(/asset/images/openlook/menu-top.png) repeat-x left top;*/
+	background: white;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {	
+	#main-nav {
+		background: url(/asset/images/openlook/menu-top.png) no-repeat left -63px, url(/asset/images/openlook/menu-top.png) no-repeat right -63px, url(/asset/images/openlook/menu-top.png) repeat-x left top;
+	}
+}
+
+@-moz-document url-prefix(){
+	.oplcontent {
+		font-weight: 100;
+	}
+	#main-nav {
+		font-weight: normal;
+	}
+}
+
+#main-nav .pref, #bottom-nav .pref {
+	float: left;
+	margin-top: 3px;
+	margin-right: 23px;
+}
+
+#nav-soon {
+	display: none;
+}
+
+#main-nav .text em, #bottom-nav .text em {
+	display: none;
+	position: absolute;
+	margin: 6px 0 0 10px;
+	width: 16px;
+	height: 16px;
+	background: transparent url(/asset/images/openlook/loading.gif) no-repeat center center;
+}
+
+#main-nav .text.loading span, #bottom-nav .text.loading {
+	text-indent: -99999px;
+}
+
+#main-nav .text.loading em, #bottom-nav .text.loading em {
+	display: block;
+}
+
+#main-nav span, #bottom-nav span {
+	float: left;
+}
+
+#main-nav .right, #bottom-nav .right {
+	float: right;
+	margin-top: 0;
+	margin-right: 0;
+}
+
+#result-count {
+	float: right;
+	margin-top: 6px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+#main-nav.idea {
+	padding: 0 23px 0 0;
+	height: 63px;
+}
+
+#main-nav .user-info {
+	float: left;
+	margin: 0;
+	height: 63px;
+	background: transparent url(/asset/images/openlook/vr.png) repeat-y right top;
+}
+
+#main-nav .user-info .image {
+	float: left;
+	margin: 7px;
+	width: 48px;
+	height: 48px;
+}
+
+#main-nav .user-info img {
+	display: none;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+#main-nav .user-info span {
+	float: left;
+	color: #444;
+	margin: 19px 22px 0 12px;
+}
+
+#main-nav .user-info span a {
+	color: #444;
+}
+
+#main-nav .user-info span a:hover {
+	color: #777;
+}
+
+#main-nav .user-info span.type {
+	color: #777;
+	font-size: 12px;
+	margin: 0 22px 0 12px;
+	text-transform: capitalize;
+}
+
+#main-nav .user-options {
+	float: left;
+	margin: 24px 0 0 12px;
+	font-size: 13px;
+}
+
+#main-nav .user-options .selectbox {
+	margin-right: 20px !important;
+}
+
+#main-nav .left {
+	float: left;
+	margin-top: 3px;
+}
+
+#main-nav .user-options a.toggle + span, #main-nav .left a.toggle + span {
+	font-size: 13px;
+	margin: 2px 0 0 3px;
+}
+
+#main-nav .user-options a.toggle, #main-nav .left a.toggle {
+	margin-top: -1px;
+}
+
+#main-nav .left a.toggle + span.loading {
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-indent: -99999px;
+	background: transparent url(/asset/images/openlook/loading.gif) no-repeat center center;
+}
+
+a#back-to-search, a#profile-link {
+	float: right;
+	color: #777;
+	margin-top: 24px;
+	padding-left: 17px;
+	background: transparent url(/asset/images/openlook/gray-arrow.png) no-repeat left 2px;
+}
+
+a:hover#back-to-search, a:hover#profile-link  {
+	color: #444;
+}
+
+/* LISTINGS */
+
+#listings {
+	padding: 0 0 57px 0;
+}
+
+.listings-holder {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#listings li {
+	clear: left;
+	margin: 0;
+	padding: 0;
+	height: 43px;
+	font-size: 12px;
+	color: #838383;
+	overflow: hidden;
+	background: transparent url(/asset/images/openlook/listing-bg.png) repeat-x left bottom;
+	
+}
+
+#listings li:hover {
+	background-color: #f7f7f7;
+}
+
+#listings li:hover .more {
+	display: block;
+}
+
+#listings li.selected, #listings li.selected:hover {
+	color: #fff;
+	text-shadow: 0 1px 2px #000;
+	background-color: #363636;
+}
+
+#listings li.selected:hover .more {
+	display: none;
+}
+
+#listings li span {
+	float: left;
+	margin: 19px 30px 0 0;
+}
+
+#listings li span a {
+	color: #444;
+}
+
+#listings li span a:hover {
+	color: #777;
+}
+
+#listings li.selected span a {
+	color: #aaa;
+}
+
+#listings li.selected span a:hover, #listings li.selected span strong {
+	color: #fff;
+}
+
+#listings li .user-img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 48px;
+	height: 48px;
+	overflow: hidden;
+}
+
+#listings li .user-img img {
+	display: none;
+}
+
+#listings li .name {
+	float: left;
+	height: 48px;
+	width: 180px;
+	padding-left: 18px;
+}
+
+#listings li .name.idea {
+	width: 230px;
+}
+
+#listings li h2 {
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 18px;
+	height: 48px;
+	margin: 0;
+	padding: 0;
+	text-shadow: 0 4px 4px #fff;
+}
+
+#listings li .name.idea h2 {
+	font-size: 16px;
+}
+
+#listings li .more {
+	display: none;
+	margin: 0 18px 0 0;
+}
+
+#listings li .more a.gen-btn {
+	float: right !important;
+	margin-left: 5px !important;
+	margin-top: 10px !important;
+}
+
+#listings li .more a span {
+	margin: 0;
+}
+
+#listings li .row-spacer {
+	width: 1px;
+	margin-right: 24px;
+}
+
+#listings li .group-name {
+	font-size:17px;
+	width: 240px;
+	margin-right: 20px;
+}
+
+#listings li .event-type0 {
+	text-transform: capitalize;
+	width: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#listings li .event-type {
+	text-transform: capitalize;
+	width: 70px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#listings li .event-type2 {
+	text-transform: capitalize;
+	width: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#listings li .event-type3 {
+	text-transform: capitalize;
+	width: 120px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#listings li .event-type4 {
+	text-transform: capitalize;
+	width: 140px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#listings li .event-type5 {
+	text-transform: capitalize;
+	width: 160px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#listings li .user-info.type {
+	text-transform: capitalize;
+	width: 60px;
+	margin-left: 30px;
+	margin-right: 24px;
+}
+
+#listings li .user-info.idea-type {
+	width: 70px;
+	margin-left: 30px;
+}
+
+#listings li .user-info.status {
+	width: 100px;
+}
+
+/* olk-details */
+
+#olk-details {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 47px;
+	width: 400px;
+	background: #363636 url(/asset/images/openlook/details-l.png) repeat-y left top;
+	z-index: 2;
+}
+
+#olk-details.idea {
+	width: 340px;
+}
+
+.olk-details-inner {
+	color: #fff;
+	font-size: 13px;
+	text-shadow: 0 1px 2px #000;
+	min-height: 40px;
+}
+
+#olk-details-content {
+	padding: 25px;
+	width: 350px;
+	position: fixed;
+	top: 47px;
+	z-index: 2;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: transparent url(/asset/images/openlook/details-t.png) repeat-x left top;
+}
+
+.idea #olk-details-content {
+	width: 284px;
+}
+
+#olk-details a.gen-btn-shadow {
+	margin: 5px 0 11px 0;
+} 
+
+#olk-details a, #my-olk-details a {
+	color: #b9b9b9;
+	font-size: 12px;
+	padding-right: 12px;
+	background: transparent url(/asset/images/openlook/link-arrow.png) no-repeat right 2px;
+}
+
+#olk-details a:hover, #my-olk-details a:hover {
+	color: #fff;
+}
+
+a#detail-close {
+	position: absolute;
+	right: 9px;
+	margin-top: -19px;
+	display: block;
+	width: 19px;
+	height: 19px;
+	padding: 0;
+	background: transparent url(/asset/images/openlook/close-x.png) no-repeat left top;
+	z-index: 5;
+}
+
+a:active#detail-close {
+	background-position: right top;
+}
+
+#olk-details hr, #my-olk-details hr {
+	clear: left;
+	border: 0;
+	height: 2px;
+	margin: 11px 0;
+	background: transparent url(/asset/images/openlook/details-hr.png) repeat-x left top;
+}
+
+.opl_item_readonly {
+	display: inline;
+}
+
+.opl_item_edit {
+	display: inline;
+}
+
+#indepth {
+	padding-bottom: 10px;
+	margin-top: -12px;
+}
+
+#indepth a.image {
+	float: left;
+	margin-right: 10px;
+	height: 50px;
+	padding: 0;
+	background: none;
+}
+
+#indepth img {
+	float: left;
+	height: 50px;
+	border: 1px solid #a2a2a2;
+	box-shadow: 0 1px 2px #000;
+	-webkit-box-shadow: 0 1px 2px #000;
+	-moz-box-shadow: 0 1px 2px #000;
+}
+
+#indepth a:hover.image img {
+	border-color: #828282;
+}
+
+#indepth h3 {
+	margin: -10px 0px 20px 0px;
+	padding: 0;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#indepth h3 a {
+	color: #fff;
+	background: none;
+	font-size: 18px;
+	padding: 0;
+	font-weight: normal;
+}
+
+#indepth h3 a:hover {
+	color: #b9b9b9;
+}
+
+#olk-details ul {
+	clear: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1.35em;
+}
+
+ul#personal-info {
+	padding: 18px 0 0 0;
+}
+
+ul#personal-info li {
+	display: block;
+}
+
+#olk-details dd {
+	color: #b9b9b9;
+	margin: 11px 0 2px 0;
+	padding: 0;
+}
+
+#olk-details p {
+	color: #b9b9b9;
+}
+
+/* SIDEBAR */
+
+#sidebar {
+	float: right;
+	width: 280px;
+	margin: 20px 40px 40px 40px;
+	font-size: 12px;
+}
+
+#sidebar p {
+	margin: 0;
+	text-align: center;
+	font-size: 11px;
+}
+
+#sidebar p a {
+	color: #222;
+	margin-left: 3px;
+}
+
+#sidebar p a:hover {
+	color: #777;
+}
+
+#sidebar #advert br {
+	display: none;
+}
+
+#sidebar .yoggrtad {
+	float: left;
+	margin-bottom: 7px;
+	margin-right: 10px;
+}
+
+#sidebar .yoggrttext {
+	float: left;
+	text-align: left;
+	margin: 2px 0 0 0;
+	width: 110px;
+	line-height: 1.3em;
+}
+
+#sidebar .adby {
+	clear: left;
+	font-size: 10px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+#sidebar .yoggrttext a, #sidebar #advert .adby a {
+	color: #777;
+	margin-left: 0;
+}
+
+/* FOOTER */
+
+#bottom-footer {
+	position: fixed;
+	bottom: 0;
+	height: 14px;
+	width: 100%;
+	min-width: 920px;
+	background-color: #b4b4b4;
+	z-index: 4;
+}
+
+#bottom-footer.browse {
+	height: 58px;
+}
+
+#bottom-footer .footer-inner {
+	position: relative;
+	padding: 0 0 0 14px;
+	height: 44px;
+	background: transparent url(/asset/images/openlook/shadow-lr.png) repeat-y left top;
+}
+
+#bottom-footer .footer-inside {
+	position: relative;
+	padding: 0 14px 0 0;
+	height: 44px;
+	background: transparent url(/asset/images/openlook/shadow-lr.png) repeat-y right top;
+}
+
+#bottom-footer .footer-shadow {
+	position: relative;
+	margin: 0 14px;
+	height: 14px;
+	background: transparent url(/asset/images/openlook/shadow-b.png) repeat-x left top;
+}
+
+/* BOTTOM NAV */
+
+#bottom-nav {
+	display: block;
+	padding: 12px 23px 0 23px;
+	height: 32px;
+	text-shadow: 0 1px 1px #f7f7f7;
+	font-size: 13px;
+	overflow: hidden;
+	background: url(/asset/images/openlook/menu-bottom.png) no-repeat left -44px, url(/asset/images/openlook/menu-bottom.png) no-repeat right -44px, url(/asset/images/openlook/menu-bottom.png) repeat-x left top;
+}
+
+@-moz-document url-prefix(){
+	#bottom-nav {
+		font-weight: normal;
+		background: transparent url(/asset/images/openlook/menu-bottom.png) repeat-x left top;
+	}
+}
+
+#bottom-nav input[type=search] {
+	float: left;
+	font-family: Titillium, "Helvetica Neue", "HelveticaNeue", helvetica, sans-serif;
+	padding: 2px 5px 0 5px;
+	margin-top: 1px;
+	margin-right: 20px;
+	color: #999;
+	width: 220px;
+}
+
+#bottom-nav .pref span:first-child {
+	margin-top: 1px;
+}
+
+#bottom-nav .pref.right {
+	float: right;
+	margin-top: 3px;
+}
+
+#bottom-nav .text.loading {
+	width: 106px;
+}
+
+#loading-bottom {
+	float: left;
+	margin-top: 6px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+#loading-bottom.loading {
+	text-indent: -99999px;
+	margin-top: 2px;
+	width: 16px;
+	height: 16px;
+	background: transparent url(/asset/images/openlook/loading.gif) no-repeat center center;
+}
+
+
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+
