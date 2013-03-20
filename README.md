@@ -1,4 +1,4 @@
-A Google Apps powered purchase order system, powering poignite.com
+a Twilio powered VBX virtual phone system with multi-tenant and payment support (via Stripe).
 
 Make sure that you update the config/database.php with your credentials.
 
